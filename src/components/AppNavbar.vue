@@ -13,35 +13,32 @@
             <ul
               class="site-menu main-menu js-clone-nav mr-auto d-none pl-0 d-lg-block"
             >
-              <li class="active">
-                <a href="index.html" class="nav-link text-left">Home</a>
+              <li>
+                <router-link exact-active-class="active" to="/" class="nav-link text-left">Home</router-link>
               </li>
               <li>
-                <a href="categories.html" class="nav-link text-left"
-                  >Categories</a
-                >
+                <router-link exact-active-class="active" to="/business" class="nav-link text-left">Business</router-link>
               </li>
               <li>
-                <a href="categories.html" class="nav-link text-left"
-                  >Politics</a
-                >
+                <router-link exact-active-class="active" to="/entertainment" class="nav-link text-left">Entertainment</router-link>
               </li>
               <li>
-                <a href="categories.html" class="nav-link text-left"
-                  >Business</a
-                >
+                <router-link exact-active-class="active" to="/science" class="nav-link text-left">Science</router-link>
               </li>
               <li>
-                <a href="categories.html" class="nav-link text-left">Health</a>
+                <router-link exact-active-class="active" to="/health" class="nav-link text-left">Health</router-link>
               </li>
               <li>
-                <a href="categories.html" class="nav-link text-left">Design</a>
+                <router-link exact-active-class="active" to="/general" class="nav-link text-left">General</router-link>
               </li>
               <li>
-                <a href="categories.html" class="nav-link text-left">Sport</a>
+                <router-link exact-active-class="active" to="/sports" class="nav-link text-left">Sports</router-link>
               </li>
               <li>
-                <a href="contact.html" class="nav-link text-left">Contact</a>
+                <router-link exact-active-class="active" to="/technology" class="nav-link text-left">Technology</router-link>
+              </li>
+              <li>
+                <router-link exact-active-class="active" to="/about" class="nav-link text-left">About</router-link>
               </li>
             </ul>
           </nav>
@@ -50,3 +47,8 @@
     </div>
   </div>
 </template>
+<style scoped>
+.active{
+  color: rgb(167, 43, 43) !important;
+}
+</style>
