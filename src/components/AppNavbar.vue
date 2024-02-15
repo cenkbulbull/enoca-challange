@@ -47,6 +47,12 @@
     </div>
   </div>
 </template>
+<script setup>
+import { ref } from 'vue';
+
+const isOpen = ref(false)
+
+</script>
 <style scoped>
 .active{
   color: rgb(167, 43, 43) !important;

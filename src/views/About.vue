@@ -4,17 +4,12 @@
         <div class="row">
           <div class="col-12 text-left">
             <div class="section-title mb-5">
-              <h2>Hakkımda</h2>
+              <h2>About</h2>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-lg-4">
-            <p>
-              <img src="../assets/images/pp.jpg" alt="Image" class="img-fluid" width="300" height="300">
-            </p>
-          </div>
-          <div class="col-lg-8 pl-md-5">
+          <div class="col-lg-12 ">
             <p>
               18.06.2001 Zonguldak doğumluyum. Liseyi Zonguldak Erdemir Anadolu Lisesi'nde okudum. 2019 yılında Bülent Ecevit Üniversitesi Bilgisayar Mühendisliği bölümünü kazandım. 2023 yılında mezun oldum. Üniversite hayatımda web geliştirme alanına ilgi duydum ve bu alanda kendimi geliştirdim. Şuan Vue Js ile frontend tarafında çalışmaktayım.
             </p>
@@ -28,6 +23,7 @@
               <li>PrimeVue</li>
               <li>Vuex</li>
             </ul>
+            <a href="/FazliCenkBulbul_CV.pdf" download="FazliCenkBulbul.pdf" type="button" class="btn btn-info mt-2">CV İNDİR</a>
           </div>
         </div>
       </div>
@@ -41,7 +37,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="section-title">
-                  <h2>Çalışmalar</h2>
+                  <h2>Works</h2>
                 </div>
               </div>
             </div>
