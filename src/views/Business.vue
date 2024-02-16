@@ -6,11 +6,10 @@
         <p>Sayfa :{{ currentPage }}</p>
       </div>
 
-      <select class="form-control mb-2 w-50" @change="sortBy">
-        <option value="publishedAt">Yüklenme Tarihine Göre</option>
-        <option value="popularity">Popülerliğe Göre</option>
-      </select>
 
+
+
+      
       <div class="row">
         <div v-for="n in news" class="col-lg-6">
           <div class="post-entry-2 d-flex">
@@ -95,12 +94,13 @@ onMounted(() => {
     .then((obj) => {
       //console.log(obj.data.articles)
       data.value = obj.data;
-      console.log(data.value);
+      //console.log(data.value);
       news.value = obj.data.articles;
-      console.log(news.value);
+      //console.log(news.value);
 
       pages.value = Math.ceil(obj.data.totalResults / 20); // sayfa sayısı
       currentPage.value = 1;
+
     });
 });
 
@@ -115,37 +115,19 @@ const nextNews = (e) => {
     .then((obj) => {
       //console.log(obj.data.articles)
       data.value = obj.data;
-      console.log(data.value);
+      //console.log(data.value);
       news.value = obj.data.articles;
-      console.log(news.value);
+      //console.log(news.value);
 
       pages.value = Math.ceil(obj.data.totalResults / 20); // sayfa sayısı
 
       window.scrollTo({ top: 150, behavior: "smooth" });
 
       currentPage.value = e;
+
     });
 };
 
-/*const sortBy = (e) => {
-  //console.log(e.target.value)
-  axios
-    .get(
-      "https://newsapi.org/v2/top-headlines?country=tr&sortBy=" +
-        e.target.value +
-        "&category=business&page=" +
-        currentPage +
-        "&apiKey=" +
-        process.env.VUE_APP_NEWSAPIKEY
-    )
-    .then((obj) => {
-      //console.log(obj.data.articles)
-      data.value = obj.data;
-      console.log(data.value);
-      news.value = obj.data.articles;
-      console.log(news.value);
-    });
-};*/
 </script>
 <style scoped>
 .thumbnail {

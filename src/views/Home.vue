@@ -235,9 +235,9 @@ onMounted(() => {
     .then((obj) => {
       //console.log(obj.data.articles)
       data.value = obj.data;
-      console.log(data.value);
+      //console.log(data.value);
       news.value = obj.data.articles;
-      console.log(news.value);
+      //console.log(news.value);
 
       pages.value = Math.ceil(obj.data.totalResults / 20); // sayfa sayısı
       currentPage.value = 1;
@@ -275,9 +275,9 @@ const nextNews = (e) => {
     .then((obj) => {
       //console.log(obj.data.articles)
       data.value = obj.data;
-      console.log(data.value);
+      //console.log(data.value);
       news.value = obj.data.articles;
-      console.log(news.value);
+      //console.log(news.value);
 
       pages.value = Math.ceil(obj.data.totalResults / 20); // sayfa sayısı
 
